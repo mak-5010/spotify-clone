@@ -11,3 +11,11 @@ export default function Document() {
     </Html>
   );
 }
+
+export const getServerSideProps = (async (context: any) => {
+
+  console.log(context)
+  // Fetch data from external API
+  // Pass data to the page via props
+  return { props: { } }
+})
